@@ -1,0 +1,33 @@
+﻿Category,Model,Typical Library,One‑line gist
+Clustering,K‑Means,"scikit‑learn, Spark MLlib",Iteratively refines centroids to minimise intra‑cluster variance【The Complete Unsupervised Learning Handbook: ML Algorithms (Medium)】
+,DBSCAN,"scikit‑learn, PyOD",Density‑based; discovers arbitrarily shaped clusters and marks noise points【The Complete Unsupervised Learning Handbook: ML Algorithms (Medium)】
+,HDBSCAN,hdbscan package,Hierarchical version of DBSCAN that handles varying densities【The Complete Unsupervised Learning Handbook: ML Algorithms (Medium)】
+,Gaussian Mixture Models (GMM),"scikit‑learn, PyTorch",Probabilistic clustering with soft assignments to Gaussian components【The Complete Unsupervised Learning Handbook: ML Algorithms (Medium)】
+,Agglomerative (Hierarchical),scikit‑learn,Builds a dendrogram by repeatedly merging the nearest clusters【scikit‑learn Unsupervised Learning Docs】
+,Spectral Clustering,scikit‑learn,Uses eigenvectors of a similarity matrix to capture non‑linear structure【scikit‑learn Unsupervised Learning Docs】
+,BIRCH,scikit‑learn,Incremental clustering tree for very large datasets【scikit‑learn Unsupervised Learning Docs】
+,Affinity Propagation,scikit‑learn,Exchanges messages between points to automatically pick exemplars【scikit‑learn Unsupervised Learning Docs】
+Dimensionality Reduction,PCA,"scikit‑learn, TensorFlow",Linear projection onto orthogonal axes that capture maximal variance【The Complete Unsupervised Learning Handbook: ML Algorithms (Medium)】
+,t‑SNE,"scikit‑learn, PyTorch",Non‑linear embedding that preserves local neighbor relationships for visualization【The Complete Unsupervised Learning Handbook: ML Algorithms (Medium)】
+,UMAP,"umap‑learn, scikit‑learn","Faster, global‑local balanced embedding using fuzzy simplicial sets【The Complete Unsupervised Learning Handbook: ML Algorithms (Medium)】"
+,ICA,scikit‑learn,Decomposes mixed signals into statistically independent components【scikit‑learn Unsupervised Learning Docs】
+,Autoencoders (shallow & deep),"TensorFlow, PyTorch","Neural encoder‑decoder learns a compact, nonlinear representation【The Complete Unsupervised Learning Handbook: ML Algorithms (Medium)】"
+,Factor Analysis,scikit‑learn,Models latent variables that explain observed covariances【scikit‑learn Unsupervised Learning Docs】
+Density / Anomaly Detection,One‑Class SVM,scikit‑learn,Learns a boundary around normal data; points outside are anomalies【scikit‑learn Unsupervised Learning Docs】
+,Isolation Forest,"scikit‑learn, PyOD",Randomly partitions data; anomalies require fewer splits【scikit‑learn Unsupervised Learning Docs】
+,Local Outlier Factor (LOF),scikit‑learn,Scores points by comparing local density to neighbors【scikit‑learn Unsupervised Learning Docs】
+,Autoencoder Reconstruction Error,"TensorFlow, PyTorch",High reconstruction loss signals out‑of‑distribution samples【The Complete Unsupervised Learning Handbook: ML Algorithms (Medium)】
+Association & Pattern Mining,Apriori,"mlxtend, Orange",Generates frequent itemsets then derives confidence‑based rules【The Complete Unsupervised Learning Handbook: ML Algorithms (Medium)】
+,FP‑Growth,mlxtend,Tree‑based mining that avoids candidate generation【The Complete Unsupervised Learning Handbook: ML Algorithms (Medium)】
+Topic Modeling,LDA (Latent Dirichlet Allocation),"Gensim, scikit‑learn",Probabilistic model of word‑topic mixtures for document corpora【The Complete Unsupervised Learning Handbook: ML Algorithms (Medium)】
+,NMF (Non‑Negative Matrix Factorization),scikit‑learn,Decomposes term‑document matrix into additive topics【scikit‑learn Unsupervised Learning Docs】
+,BERTopic,bertopic,"BERT embeddings + clustering give modern, coherent topics【Reddit discussion on unsupervised algorithms】"
+Collaborative Filtering / Matrix Factorization,SVD,"Surprise, scikit‑learn",Low‑rank approximation of user‑item rating matrices【Analytics Vidhya blog】
+,Probabilistic Matrix Factorization,TensorFlow Recommenders,Bayesian treatment of latent factors and uncertainty【Analytics Vidhya blog】
+Neural Topology,Self‑Organizing Map (SOM),"MiniSom, TensorFlow",Projects high‑dimensional data onto a 2‑D lattice preserving topology【GeeksforGeeks Unsupervised Learning page】
+Deep Generative Models,VAE (Variational Autoencoder),"TensorFlow, PyTorch",Learns a smooth latent space and enables sampling of new data【The Complete Unsupervised Learning Handbook: ML Algorithms (Medium)】
+,GAN (Generative Adversarial Network),"TensorFlow, PyTorch",Competing generator & discriminator produce realistic samples【The Complete Unsupervised Learning Handbook: ML Algorithms (Medium)】
+,RBM (Restricted Boltzmann Machine),"PyTorch, TensorFlow",Energy‑based model for binary latent feature extraction【Analytics Vidhya blog】
+,Deep Belief Network (DBN),"PyTorch, TensorFlow",Stacked RBMs that learn hierarchical representations【Analytics Vidhya blog】
+Biclustering,Spectral Biclustering,scikit‑learn,Finds sub‑matrices with coherent row‑column patterns【scikit‑learn Unsupervised Learning Docs】
+,FABIA,pyFABIA,Factor‑analysis based biclustering for noisy gene‑expression data【ScienceDirect article】

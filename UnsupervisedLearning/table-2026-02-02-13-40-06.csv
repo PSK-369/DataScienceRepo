@@ -1,0 +1,9 @@
+﻿Algorithm,How it works,Typical libraries
+Bootstrap Aggregating (Bagging),Trains each base learner on a bootstrap‑sample of the data and averages predictions【Bootstrap aggregating (Wikipedia)】,scikit‑learn BaggingClassifier/Regressor
+Random Forest,Bagged decision trees with random feature sub‑sampling at each split,"scikit‑learn RandomForest*, ranger (R)"
+Extra Trees (Extremely Randomized Trees),Uses random splits (not optimal) to increase variance reduction,scikit‑learn ExtraTrees*
+Pasting,Similar to bagging but samples without replacement,scikit‑learn (via Bagging* with bootstrap=False)
+Random Subspace,Trains each learner on a random subset of features (columns),scikit‑learn Bagging* with max_features
+Weighted Majority Voting,Aggregates predictions by weighted vote rather than simple majority,scikit‑learn VotingClassifier (hard/soft)
+Bagged K‑Nearest Neighbors,Applies bagging to KNN to smooth decision boundaries,scikit‑learn BaggingClassifier with KNeighborsClassifier
+Bagged Decision Stumps,Uses very shallow trees (depth 1) as weak learners in a bagged ensemble,scikit‑learn BaggingClassifier with DecisionTreeClassifier(max_depth=1)

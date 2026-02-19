@@ -1,0 +1,11 @@
+﻿Algorithm,Core Idea,Popular Implementations
+AdaBoost,Re‑weights mis‑classified samples after each weak learner,scikit‑learn (AdaBoostClassifier/Regressor)
+Gradient Boosting Machines (GBM),Fits each new tree to the gradient of the loss function,"scikit‑learn GradientBoosting*, XGBoost"
+XGBoost,"Optimised GBM with regularisation, sparsity‑aware splits, and parallelism",xgboost library
+LightGBM,"Leaf‑wise tree growth, histogram binning for speed",lightgbm library
+CatBoost,"Handles categorical features natively, ordered boosting",catboost library
+LogitBoost,"Boosting for logistic loss, suitable for classification",scikit‑learn (via LogitBoost in some extensions)
+BrownBoost,Variant that tolerates noisy data by limiting weight growth,Academic implementations (research code)
+LPBoost,Linear‑programming formulation that maximises margin,"Specialized libraries (e.g., lpboost in R)"
+Stochastic Gradient Boosting,Random sub‑sampling of rows/columns per iteration for variance reduction,"gbm package (R), scikit‑learn HistGradientBoosting*"
+MART (Multiple Additive Regression Trees),Early name for gradient‑boosted trees used in ranking,"XGBoost, LightGBM (ranking mode)"
