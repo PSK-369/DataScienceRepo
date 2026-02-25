@@ -1,0 +1,57 @@
+version: "3.8"
+services:
+  authfrontService:
+    image: docer998/marriagetypepred:auth
+    container_name: Mainpredauthservice01
+    ports:
+      - "10090:10002"
+    environment:
+      - key=Authfrontservice01
+      - BACKURL=http://BackendService:10003
+    restart: always
+
+  authfrontService1:
+    image: docer998/marriagetypepred:auth
+    container_name: Mainpredauthservice02
+    ports:
+      - "10091:10002"
+    environment:
+      - key=Authfrontservice02
+      - BACKURL=http://BackendService:10003
+    restart: always
+
+  Mainpredfrontservice:
+    image: docer998/marriagetypepred:mainfront
+    container_name: MainpredFrontService01
+    ports:
+      - "10092:10001"
+    environment:
+      - key=Mainpreservice01
+    restart: always
+
+  Mainpredfrontservice2:
+    image: docer998/marriagetypepred:mainfront
+    container_name: MainpredFrontService02
+    ports:
+      - "10093:10001"
+    environment:
+      - key=Mainpreservice02
+    restart: always
+
+  BackendService:
+    image: docer998/marriagetypepred:back
+    container_name: MainServiceback01
+    ports:
+      - "10094:10003"
+    environment:
+      - key=BackedService02
+    restart: always
+
+  BackendService1:
+    image: docer998/marriagetypepred:back
+    container_name: MainServiceback02
+    ports:
+      - "10095:10003"
+    environment:
+      - key=BackedService01
+    restart: always
